@@ -6,12 +6,15 @@
  */
 
 #include "String.h"
-#include "Language.h"
-#include <cstddef>
+
 #include <algorithm>
+#include <cstddef>
+
+#include "Language.h"
 
 /**
- * @brief Constructor que inicializa la cadena con contenido y alfabeto específicos
+ * @brief Constructor que inicializa la cadena con contenido y alfabeto
+ * específicos
  * @param content Contenido de la cadena como std::string
  * @param alphabet Alfabeto sobre el cual está definida la cadena
  */
@@ -22,25 +25,19 @@ String::String(const std::string& content, const Alphabet& alphabet)
  * @brief Obtiene el contenido de la cadena
  * @return std::string Contenido de la cadena
  */
-std::string String::GetContent() const {
-  return content_;
-}
+std::string String::GetContent() const { return content_; }
 
 /**
  * @brief Obtiene el alfabeto sobre el cual está definida la cadena
  * @return Alphabet Alfabeto de la cadena
  */
-Alphabet String::GetAlphabet() const {
-  return alphabet_;
-}
+Alphabet String::GetAlphabet() const { return alphabet_; }
 
 /**
  * @brief Calcula la longitud de la cadena
  * @return size_t Número de símbolos en la cadena
  */
-size_t String::Length() const {
-  return content_.size();
-}
+size_t String::Length() const { return content_.size(); }
 
 /**
  * @brief Verifica si la cadena es válida respecto a su alfabeto
@@ -60,9 +57,7 @@ bool String::IsValid() const {
  * @brief Verifica si la cadena está vacía
  * @return true si la cadena no contiene símbolos
  */
-bool String::IsEmpty() const {
-  return content_.empty();
-}
+bool String::IsEmpty() const { return content_.empty(); }
 
 /**
  * @brief Genera la cadena inversa (reversa)
@@ -80,17 +75,17 @@ String String::Reverse() const {
  */
 Language String::Prefixes() const {
   Language prefixes_lang;
-  
+
   // Añadir la cadena vacía como prefijo
   String empty_string("", alphabet_);
   prefixes_lang.AddString(empty_string);
-  
+
   // Añadir todos los prefijos de la cadena
   for (size_t i = 1; i <= content_.length(); ++i) {
     String prefix(content_.substr(0, i), alphabet_);
     prefixes_lang.AddString(prefix);
   }
-  
+
   return prefixes_lang;
 }
 
@@ -101,12 +96,12 @@ Language String::Prefixes() const {
  */
 Language String::Suffixes() const {
   Language suffixes_lang;
-  
+
   // Añadir la cadena vacía como sufijo
   String empty_string("", alphabet_);
-  
+
   suffixes_lang.AddString(empty_string);
-  
+
   // Añadir todos los sufijos de la cadena
   for (size_t i = 1; i <= content_.length(); ++i) {
     String suffix(content_.substr(content_.length() - i), alphabet_);
@@ -120,7 +115,8 @@ Language String::Suffixes() const {
  * @brief Operador de igualdad para comparar dos cadenas
  * Compara únicamente el contenido de las cadenas, no sus alfabetos
  * @param other Cadena a comparar
- * @return true si las cadenas tienen el mismo contenido, false en caso contrario
+ * @return true si las cadenas tienen el mismo contenido, false en caso
+ * contrario
  */
 bool String::operator==(const String& other) const {
   return content_ == other.content_;

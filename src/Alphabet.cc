@@ -5,6 +5,24 @@
  * @date 21 de septiembre de 2025
  */
 
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Computabilidad y Algoritmia
+// Curso: 2º
+// Práctica 2: Cadenas y lenguajes
+// Autor: Hector Luis Mariño Fernandez
+// Correo: alu0100595604@ull.edu.es
+// Fecha: 21/09/2025
+// Archivo Alphabet.cc: implementación de la clase Alphabet.
+// Contiene la implementación de métodos de la clase Alphabet
+// para manejo de alfabetos en teoría de autómatas
+// Referencias:
+// https://en.wikipedia.org/wiki/Alphabet_(formal_languages)
+//
+// Historial de revisiones
+// 21/09/2025 - Creación (primera versión) del código
+
 #include "Alphabet.h"
 
 /**
@@ -17,9 +35,7 @@ Alphabet::Alphabet(const std::set<char>& symbols) : symbols_(symbols) {}
  * @brief Obtiene una copia del conjunto de símbolos del alfabeto
  * @return std::set<char> Conjunto de símbolos del alfabeto
  */
-std::set<char> Alphabet::GetSymbols() const {
-  return symbols_;
-}
+std::set<char> Alphabet::GetSymbols() const { return symbols_; }
 
 /**
  * @brief Verifica si un carácter pertenece al alfabeto
@@ -62,15 +78,16 @@ std::ostream& operator<<(std::ostream& os, const Alphabet& alphabet) {
 std::istream& operator>>(std::istream& is, Alphabet& alphabet) {
   std::string input;
   std::getline(is, input);
-  
+
   alphabet.symbols_.clear();
-  
+
   // Parsear la entrada (asumiendo formato: a b c o abc o {a,b,c})
   for (char c : input) {
-    if (std::isalnum(c) || (std::ispunct(c) && c != '{' && c != '}' && c != ',' && c != ' ')) {
+    if (std::isalnum(c) ||
+        (std::ispunct(c) && c != '{' && c != '}' && c != ',' && c != ' ')) {
       alphabet.symbols_.insert(c);
     }
   }
-  
+
   return is;
 }

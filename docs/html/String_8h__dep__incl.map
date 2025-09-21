@@ -1,0 +1,13 @@
+<map id="src/String.h" name="src/String.h">
+<area shape="rect" id="Node000001" title="Definición de la clase String para representar cadenas sobre un alfabeto." alt="" coords="140,5,235,31"/>
+<area shape="rect" id="Node000002" href="$Language_8h.html" title="Definición de la clase Language para representar lenguajes formales." alt="" coords="127,79,247,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,44,190,79,185,79,185,44"/>
+<area shape="rect" id="Node000004" href="$Main_8cc.html" title="Programa principal para operaciones con cadenas y lenguajes." alt="" coords="5,152,100,177"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="162,41,117,81,85,119,62,153,58,150,81,116,113,77,158,37"/>
+<area shape="rect" id="Node000005" href="$String_8cc.html" title="Implementación de la clase String." alt="" coords="275,152,377,177"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="216,37,261,77,295,116,320,150,316,153,291,120,257,81,212,41"/>
+<area shape="rect" id="Node000003" href="$Language_8cc.html" title="Implementación de la clase Language." alt="" coords="124,152,251,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,118,190,152,185,152,185,118"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="155,113,76,154,73,149,152,108"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="223,108,305,149,302,154,220,113"/>
+</map>

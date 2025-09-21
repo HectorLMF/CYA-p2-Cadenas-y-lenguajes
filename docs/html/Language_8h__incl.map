@@ -1,0 +1,23 @@
+<map id="src/Language.h" name="src/Language.h">
+<area shape="rect" id="Node000001" title="Definición de la clase Language para representar lenguajes formales." alt="" coords="193,5,313,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,91,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,33,95,77,93,72,219,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="115,79,186,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,33,180,73,177,68,235,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="323,225,403,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,31,244,59,238,97,238,138,243,158,252,176,263,190,277,202,310,220,308,225,274,207,259,194,247,179,238,159,233,139,232,96,239,58,247,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="509,225,552,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="314,21,381,32,458,54,496,71,532,92,564,119,590,151,595,169,589,188,576,205,561,219,557,215,573,201,585,185,590,169,586,153,560,123,529,97,494,76,456,59,380,37,313,26"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="262,152,325,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="259,30,289,138,284,139,254,32"/>
+<area shape="rect" id="Node000007" href="$String_8h.html" title="Definición de la clase String para representar cadenas sobre un alfabeto." alt="" coords="327,79,399,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="272,28,335,69,332,73,269,33"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="365,104,365,212,360,212,360,104"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="353,106,316,144,312,140,349,102"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="517,152,576,177"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="393,102,505,145,503,150,391,107"/>
+<area shape="rect" id="Node000009" href="$Alphabet_8h.html" title="Definición de la clase Alphabet para representar alfabetos finitos." alt="" coords="401,152,493,177"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="378,102,424,141,421,145,374,106"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="435,179,389,218,385,214,431,175"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="462,175,508,214,505,218,458,179"/>
+</map>

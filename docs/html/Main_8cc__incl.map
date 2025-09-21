@@ -1,0 +1,33 @@
+<map id="src/Main.cc" name="src/Main.cc">
+<area shape="rect" id="Node000001" title="Programa principal para operaciones con cadenas y lenguajes." alt="" coords="219,5,313,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,79,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,33,92,77,90,72,229,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="394,299,474,324"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,31,177,49,159,63,144,80,122,114,115,128,114,143,120,160,135,183,202,249,244,276,290,293,338,303,380,307,380,312,337,308,289,298,241,280,199,253,131,186,115,163,109,143,110,127,117,111,140,77,155,59,175,45,217,27"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="154,79,229,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,33,215,71,212,67,252,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="213,225,276,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,31,250,211,245,211,262,31"/>
+<area shape="rect" id="Node000006" href="$Alphabet_8h.html" title="Definición de la clase Alphabet para representar alfabetos finitos." alt="" coords="485,225,577,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="314,24,407,43,518,70,572,87,619,106,656,127,680,151,686,165,685,179,677,191,665,201,631,217,592,228,590,223,629,212,662,197,673,187,680,177,681,166,676,153,653,132,617,111,570,92,517,75,406,48,313,30"/>
+<area shape="rect" id="Node000008" href="$Language_8h.html" title="Definición de la clase Language para representar lenguajes formales." alt="" coords="399,79,496,104"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="296,28,406,71,404,76,294,33"/>
+<area shape="rect" id="Node000011" href="$String_8h.html" title="Definición de la clase String para representar cadenas sobre un alfabeto." alt="" coords="338,152,410,177"/>
+<area shape="poly" id="edge19_Node000001_Node000011" title=" " alt="" coords="277,30,359,139,355,142,273,33"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="517,253,463,292,460,288,514,249"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="522,299,565,324"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="536,251,542,285,536,286,531,251"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="449,105,438,285,433,284,444,104"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="418,107,374,127,328,154,293,185,264,216,260,212,289,181,324,150,371,122,416,102"/>
+<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="497,96,602,115,650,130,668,140,680,150,690,172,690,193,680,214,664,234,622,269,578,295,576,291,619,264,661,230,676,211,684,192,685,173,676,154,665,144,648,135,601,120,496,101"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="581,152,666,177"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="477,102,583,144,581,149,475,106"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="485,152,556,177"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="461,102,501,140,497,144,458,106"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="437,106,398,144,394,140,433,102"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="381,177,426,285,421,287,376,179"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="354,180,279,221,277,216,352,175"/>
+<area shape="poly" id="edge18_Node000011_Node000006" title=" " alt="" coords="400,175,494,217,492,222,398,180"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="301,225,359,251"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="369,179,347,215,342,212,364,176"/>
+</map>

@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cadenas y Lenguajes: Referencia de la clase String</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Cadenas y Lenguajes<span id="projectnumber">&#160;P2</span>
+   </div>
+   <div id="projectbrief">Implementación de clases para manejo de cadenas y lenguajes formales</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classString.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#friends">Amigas</a> &#124;
+<a href="classString-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase String</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que representa una cadena (string) sobre un alfabeto específico.  
+ <a href="classString.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="String_8h_source.html">String.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración de String:</div>
+<div class="dyncontent">
+<div class="center"><img src="classString__coll__graph.png" border="0" usemap="#aString_coll__map" alt="Collaboration graph"/></div>
+<map name="aString_coll__map" id="aString_coll__map">
+<area shape="rect" title="Clase que representa una cadena (string) sobre un alfabeto específico." alt="" coords="111,196,171,221"/>
+<area shape="rect" title=" " alt="" coords="45,108,131,133"/>
+<area shape="poly" title=" " alt="" coords="101,144,116,171,134,194,129,198,111,173,96,147"/>
+<area shape="rect" title=" " alt="" coords="5,5,144,45"/>
+<area shape="poly" title=" " alt="" coords="82,58,89,107,84,108,77,59"/>
+<area shape="rect" href="classAlphabet.html" title="Clase que representa un alfabeto finito." alt="" coords="180,108,260,133"/>
+<area shape="poly" title=" " alt="" coords="202,146,177,174,154,197,151,194,173,170,198,142"/>
+<area shape="rect" title=" " alt="" coords="168,13,296,38"/>
+<area shape="poly" title=" " alt="" coords="231,52,224,108,219,108,226,51"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">leyenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ab0e1fc6517e4a8aa42459afd02d187cc" id="r_ab0e1fc6517e4a8aa42459afd02d187cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ab0e1fc6517e4a8aa42459afd02d187cc">String</a> ()=default</td></tr>
+<tr class="memdesc:ab0e1fc6517e4a8aa42459afd02d187cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor por defecto que crea una cadena vacía.  <br /></td></tr>
+<tr class="separator:ab0e1fc6517e4a8aa42459afd02d187cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0b6a0d053e95d87fb7ddacb75092bb" id="r_abe0b6a0d053e95d87fb7ddacb75092bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#abe0b6a0d053e95d87fb7ddacb75092bb">String</a> (const std::string &amp;content, const <a class="el" href="classAlphabet.html">Alphabet</a> &amp;alphabet)</td></tr>
+<tr class="memdesc:abe0b6a0d053e95d87fb7ddacb75092bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor que inicializa la cadena con contenido y alfabeto específicos.  <br /></td></tr>
+<tr class="separator:abe0b6a0d053e95d87fb7ddacb75092bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93a09649b7587ef9dc1ef4a130a0e8e" id="r_ae93a09649b7587ef9dc1ef4a130a0e8e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ae93a09649b7587ef9dc1ef4a130a0e8e">GetContent</a> () const</td></tr>
+<tr class="memdesc:ae93a09649b7587ef9dc1ef4a130a0e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el contenido de la cadena.  <br /></td></tr>
+<tr class="separator:ae93a09649b7587ef9dc1ef4a130a0e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebe644adc5027e98b75650cc9923d86" id="r_a7ebe644adc5027e98b75650cc9923d86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAlphabet.html">Alphabet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a7ebe644adc5027e98b75650cc9923d86">GetAlphabet</a> () const</td></tr>
+<tr class="memdesc:a7ebe644adc5027e98b75650cc9923d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el alfabeto sobre el cual está definida la cadena.  <br /></td></tr>
+<tr class="separator:a7ebe644adc5027e98b75650cc9923d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8553f4bdd42999cfd861e391859b3d6" id="r_ad8553f4bdd42999cfd861e391859b3d6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ad8553f4bdd42999cfd861e391859b3d6">Length</a> () const</td></tr>
+<tr class="memdesc:ad8553f4bdd42999cfd861e391859b3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la longitud de la cadena.  <br /></td></tr>
+<tr class="separator:ad8553f4bdd42999cfd861e391859b3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25966660b06f1b881ca330e2b1e4be34" id="r_a25966660b06f1b881ca330e2b1e4be34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a25966660b06f1b881ca330e2b1e4be34">IsValid</a> () const</td></tr>
+<tr class="memdesc:a25966660b06f1b881ca330e2b1e4be34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica si la cadena es válida respecto a su alfabeto.  <br /></td></tr>
+<tr class="separator:a25966660b06f1b881ca330e2b1e4be34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eeeb11b58f3693bf2e77d88df779cfe" id="r_a4eeeb11b58f3693bf2e77d88df779cfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a4eeeb11b58f3693bf2e77d88df779cfe">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:a4eeeb11b58f3693bf2e77d88df779cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica si la cadena está vacía.  <br /></td></tr>
+<tr class="separator:a4eeeb11b58f3693bf2e77d88df779cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1ad41000871ecfe6ca394020d67cbc" id="r_acd1ad41000871ecfe6ca394020d67cbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classString.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#acd1ad41000871ecfe6ca394020d67cbc">Reverse</a> () const</td></tr>
+<tr class="memdesc:acd1ad41000871ecfe6ca394020d67cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera la cadena inversa (reversa)  <br /></td></tr>
+<tr class="separator:acd1ad41000871ecfe6ca394020d67cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e4cd516489f2aa4746d7aecb6d643a" id="r_a09e4cd516489f2aa4746d7aecb6d643a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLanguage.html">Language</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a09e4cd516489f2aa4746d7aecb6d643a">Prefixes</a> () const</td></tr>
+<tr class="memdesc:a09e4cd516489f2aa4746d7aecb6d643a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera el lenguaje de todos los prefijos de la cadena.  <br /></td></tr>
+<tr class="separator:a09e4cd516489f2aa4746d7aecb6d643a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a8f423e3ad5a678956edfb3f16945f" id="r_ab3a8f423e3ad5a678956edfb3f16945f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLanguage.html">Language</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ab3a8f423e3ad5a678956edfb3f16945f">Suffixes</a> () const</td></tr>
+<tr class="memdesc:ab3a8f423e3ad5a678956edfb3f16945f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera el lenguaje de todos los sufijos de la cadena.  <br /></td></tr>
+<tr class="separator:ab3a8f423e3ad5a678956edfb3f16945f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3833f844a743166a7b9ad3d762aa3e5d" id="r_a3833f844a743166a7b9ad3d762aa3e5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a3833f844a743166a7b9ad3d762aa3e5d">operator==</a> (const <a class="el" href="classString.html">String</a> &amp;other) const</td></tr>
+<tr class="memdesc:a3833f844a743166a7b9ad3d762aa3e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de igualdad para comparar dos cadenas.  <br /></td></tr>
+<tr class="separator:a3833f844a743166a7b9ad3d762aa3e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72b23ee7dda1cb075cce5b6b27e083a" id="r_ab72b23ee7dda1cb075cce5b6b27e083a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ab72b23ee7dda1cb075cce5b6b27e083a">operator&lt;</a> (const <a class="el" href="classString.html">String</a> &amp;other) const</td></tr>
+<tr class="memdesc:ab72b23ee7dda1cb075cce5b6b27e083a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de comparación lexicográfica.  <br /></td></tr>
+<tr class="separator:ab72b23ee7dda1cb075cce5b6b27e083a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a741876f4cbd69e758b4f2d8c5c4d135c" id="r_a741876f4cbd69e758b4f2d8c5c4d135c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a741876f4cbd69e758b4f2d8c5c4d135c">content_</a></td></tr>
+<tr class="memdesc:a741876f4cbd69e758b4f2d8c5c4d135c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contenido de la cadena como secuencia de caracteres.  <br /></td></tr>
+<tr class="separator:a741876f4cbd69e758b4f2d8c5c4d135c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2e38fcb2276c76ea51811aff47dc1e" id="r_a7d2e38fcb2276c76ea51811aff47dc1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAlphabet.html">Alphabet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#a7d2e38fcb2276c76ea51811aff47dc1e">alphabet_</a></td></tr>
+<tr class="memdesc:a7d2e38fcb2276c76ea51811aff47dc1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alfabeto sobre el cual está definida la cadena.  <br /></td></tr>
+<tr class="separator:a7d2e38fcb2276c76ea51811aff47dc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Amigas</h2></td></tr>
+<tr class="memitem:ac70449bc0760570cc77558615fef1fae" id="r_ac70449bc0760570cc77558615fef1fae"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ac70449bc0760570cc77558615fef1fae">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classString.html">String</a> &amp;str)</td></tr>
+<tr class="memdesc:ac70449bc0760570cc77558615fef1fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de salida para imprimir la cadena.  <br /></td></tr>
+<tr class="separator:ac70449bc0760570cc77558615fef1fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5eb8a0420d00e19a0e561a5c7d7ed16" id="r_ad5eb8a0420d00e19a0e561a5c7d7ed16"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classString.html#ad5eb8a0420d00e19a0e561a5c7d7ed16">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="classString.html">String</a> &amp;str)</td></tr>
+<tr class="memdesc:ad5eb8a0420d00e19a0e561a5c7d7ed16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de entrada para leer una cadena desde un flujo.  <br /></td></tr>
+<tr class="separator:ad5eb8a0420d00e19a0e561a5c7d7ed16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase que representa una cadena (string) sobre un alfabeto específico. </p>
+<p>Una cadena es una secuencia finita de símbolos de un alfabeto. Esta clase implementa las operaciones básicas sobre cadenas utilizadas en teoría de autómatas y lenguajes formales, como obtener prefijos, sufijos, inversas, etc. </p>
+</div><h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="ab0e1fc6517e4a8aa42459afd02d187cc" name="ab0e1fc6517e4a8aa42459afd02d187cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e1fc6517e4a8aa42459afd02d187cc">&#9670;&#160;</a></span>String() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String::String </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor por defecto que crea una cadena vacía. </p>
+
+</div>
+</div>
+<a id="abe0b6a0d053e95d87fb7ddacb75092bb" name="abe0b6a0d053e95d87fb7ddacb75092bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe0b6a0d053e95d87fb7ddacb75092bb">&#9670;&#160;</a></span>String() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String::String </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classAlphabet.html">Alphabet</a> &amp;&#160;</td>
+          <td class="paramname"><em>alphabet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor que inicializa la cadena con contenido y alfabeto específicos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>Contenido de la cadena como std::string </td></tr>
+    <tr><td class="paramname">alphabet</td><td>Alfabeto sobre el cual está definida la cadena </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="a7ebe644adc5027e98b75650cc9923d86" name="a7ebe644adc5027e98b75650cc9923d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebe644adc5027e98b75650cc9923d86">&#9670;&#160;</a></span>GetAlphabet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAlphabet.html">Alphabet</a> String::GetAlphabet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene el alfabeto sobre el cual está definida la cadena. </p>
+<dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classAlphabet.html" title="Clase que representa un alfabeto finito.">Alphabet</a> Alfabeto de la cadena </dd></dl>
+
+</div>
+</div>
+<a id="ae93a09649b7587ef9dc1ef4a130a0e8e" name="ae93a09649b7587ef9dc1ef4a130a0e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93a09649b7587ef9dc1ef4a130a0e8e">&#9670;&#160;</a></span>GetContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string String::GetContent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene el contenido de la cadena. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>std::string Contenido de la cadena </dd></dl>
+
+</div>
+</div>
+<a id="a4eeeb11b58f3693bf2e77d88df779cfe" name="a4eeeb11b58f3693bf2e77d88df779cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eeeb11b58f3693bf2e77d88df779cfe">&#9670;&#160;</a></span>IsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool String::IsEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica si la cadena está vacía. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si la cadena no contiene símbolos </dd></dl>
+
+</div>
+</div>
+<a id="a25966660b06f1b881ca330e2b1e4be34" name="a25966660b06f1b881ca330e2b1e4be34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25966660b06f1b881ca330e2b1e4be34">&#9670;&#160;</a></span>IsValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool String::IsValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica si la cadena es válida respecto a su alfabeto. </p>
+<p>Verifica si la cadena es válida respecto a su alfabeto Comprueba que todos los caracteres de la cadena estén en el alfabeto.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si todos los caracteres de la cadena están en el alfabeto </dd></dl>
+
+</div>
+</div>
+<a id="ad8553f4bdd42999cfd861e391859b3d6" name="ad8553f4bdd42999cfd861e391859b3d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8553f4bdd42999cfd861e391859b3d6">&#9670;&#160;</a></span>Length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t String::Length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula la longitud de la cadena. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>size_t Número de símbolos en la cadena </dd></dl>
+
+</div>
+</div>
+<a id="ab72b23ee7dda1cb075cce5b6b27e083a" name="ab72b23ee7dda1cb075cce5b6b27e083a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72b23ee7dda1cb075cce5b6b27e083a">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool String::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Operador de comparación lexicográfica. </p>
+<p>Operador de comparación lexicográfica Utiliza el orden lexicográfico estándar de std::string.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Cadena a comparar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si esta cadena es lexicográficamente menor que other </dd></dl>
+
+</div>
+</div>
+<a id="a3833f844a743166a7b9ad3d762aa3e5d" name="a3833f844a743166a7b9ad3d762aa3e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3833f844a743166a7b9ad3d762aa3e5d">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool String::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Operador de igualdad para comparar dos cadenas. </p>
+<p>Operador de igualdad para comparar dos cadenas Compara únicamente el contenido de las cadenas, no sus alfabetos.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Cadena a comparar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si las cadenas tienen el mismo contenido, false en caso contrario </dd></dl>
+
+</div>
+</div>
+<a id="a09e4cd516489f2aa4746d7aecb6d643a" name="a09e4cd516489f2aa4746d7aecb6d643a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e4cd516489f2aa4746d7aecb6d643a">&#9670;&#160;</a></span>Prefixes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLanguage.html">Language</a> String::Prefixes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Genera el lenguaje de todos los prefijos de la cadena. </p>
+<p>Genera el lenguaje de todos los prefijos de la cadena Un prefijo es una subcadena que comienza desde el inicio.</p>
+<dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classLanguage.html" title="Clase que representa un lenguaje formal como conjunto de cadenas.">Language</a> Lenguaje que contiene todos los prefijos </dd></dl>
+
+</div>
+</div>
+<a id="acd1ad41000871ecfe6ca394020d67cbc" name="acd1ad41000871ecfe6ca394020d67cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1ad41000871ecfe6ca394020d67cbc">&#9670;&#160;</a></span>Reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classString.html">String</a> String::Reverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Genera la cadena inversa (reversa) </p>
+<p>Genera la cadena inversa (reversa) Crea una nueva cadena con los símbolos en orden inverso.</p>
+<dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classString.html" title="Clase que representa una cadena (string) sobre un alfabeto específico.">String</a> Nueva cadena con los símbolos en orden inverso </dd></dl>
+
+</div>
+</div>
+<a id="ab3a8f423e3ad5a678956edfb3f16945f" name="ab3a8f423e3ad5a678956edfb3f16945f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a8f423e3ad5a678956edfb3f16945f">&#9670;&#160;</a></span>Suffixes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLanguage.html">Language</a> String::Suffixes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Genera el lenguaje de todos los sufijos de la cadena. </p>
+<p>Genera el lenguaje de todos los sufijos de la cadena Un sufijo es una subcadena que termina al final.</p>
+<dl class="section return"><dt>Devuelve</dt><dd><a class="el" href="classLanguage.html" title="Clase que representa un lenguaje formal como conjunto de cadenas.">Language</a> Lenguaje que contiene todos los sufijos </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de símbolos amigos y relacionados</h2>
+<a id="ac70449bc0760570cc77558615fef1fae" name="ac70449bc0760570cc77558615fef1fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70449bc0760570cc77558615fef1fae">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Operador de salida para imprimir la cadena. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>Flujo de salida </td></tr>
+    <tr><td class="paramname">str</td><td>Cadena a imprimir </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>std::ostream&amp; Referencia al flujo de salida </dd></dl>
+
+</div>
+</div>
+<a id="ad5eb8a0420d00e19a0e561a5c7d7ed16" name="ad5eb8a0420d00e19a0e561a5c7d7ed16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5eb8a0420d00e19a0e561a5c7d7ed16">&#9670;&#160;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream &amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classString.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Operador de entrada para leer una cadena desde un flujo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is</td><td>Flujo de entrada </td></tr>
+    <tr><td class="paramname">str</td><td>Cadena donde almacenar el contenido leído </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>std::istream&amp; Referencia al flujo de entrada </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a7d2e38fcb2276c76ea51811aff47dc1e" name="a7d2e38fcb2276c76ea51811aff47dc1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2e38fcb2276c76ea51811aff47dc1e">&#9670;&#160;</a></span>alphabet_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAlphabet.html">Alphabet</a> String::alphabet_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alfabeto sobre el cual está definida la cadena. </p>
+
+</div>
+</div>
+<a id="a741876f4cbd69e758b4f2d8c5c4d135c" name="a741876f4cbd69e758b4f2d8c5c4d135c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a741876f4cbd69e758b4f2d8c5c4d135c">&#9670;&#160;</a></span>content_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string String::content_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contenido de la cadena como secuencia de caracteres. </p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada de los siguientes archivos:<ul>
+<li>src/<a class="el" href="String_8h_source.html">String.h</a></li>
+<li>src/<a class="el" href="String_8cc.html">String.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classString.html">String</a></li>
+    <li class="footer">Generado el Domingo, 21 de septiembre de 2025 11:50:12 para Cadenas y Lenguajes por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

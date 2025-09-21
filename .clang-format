@@ -1,0 +1,153 @@
+# Configuración de clang-format basada en la guía de estilo oficial de Google C++
+# https://google.github.io/styleguide/cppguide.html
+
+BasedOnStyle: Google
+
+# Configuraciones específicas según la guía de Google
+Language: Cpp
+Standard: c++17
+
+# Longitud de línea: 80 caracteres (recomendación de Google)
+ColumnLimit: 80
+
+# Indentación: 2 espacios (estándar de Google)
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# Naming conventions (Google style)
+# Funciones: PascalCase para funciones miembro públicas, snake_case para privadas
+# Variables: snake_case con trailing underscore para miembros privados
+# Constantes: kCamelCase
+# Macros: ALL_CAPS
+
+# Espaciado según Google Style
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceAroundPointerQualifiers: Default
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: true
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Saltos de línea según Google Style
+BreakBeforeBraces: Attach
+BreakBeforeBinaryOperators: None
+BreakBeforeConceptDeclarations: true
+BreakBeforeInheritanceComma: false
+BreakInheritanceList: BeforeColon
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializersBeforeComma: false
+BreakConstructorInitializers: BeforeColon
+BreakAfterJavaFieldAnnotations: false
+BreakStringLiterals: true
+
+# Alineación según Google Style
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: None
+AlignConsecutiveMacros: None
+AlignConsecutiveAssignments: None
+AlignConsecutiveBitFields: None
+AlignConsecutiveDeclarations: None
+AlignEscapedNewlines: Left
+AlignOperands: Align
+AlignTrailingComments: true
+
+# Indentación específica según Google
+AccessModifierOffset: -1
+IndentAccessModifiers: false
+IndentCaseLabels: true
+IndentCaseBlocks: false
+IndentGotoLabels: true
+IndentPPDirectives: None
+IndentExternBlock: AfterExternBlock
+IndentRequires: false
+IndentWrappedFunctionNames: false
+
+# Funciones según Google Style
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortEnumsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: All
+AllowShortLambdasOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+
+# Comentarios según Google Style
+ReflowComments: true
+CommentPragmas: '^ IWYU pragma:'
+FixNamespaceComments: true
+
+# Headers e includes según Google Style
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+  # Headers de la librería estándar de C++
+  - Regex: '^<.*\.h>'
+    Priority: 1
+    SortPriority: 0
+    CaseSensitive: false
+  # Headers de la librería estándar de C++
+  - Regex: '^<.*'
+    Priority: 2
+    SortPriority: 0
+    CaseSensitive: false
+  # Headers locales del proyecto
+  - Regex: '^".*'
+    Priority: 3
+    SortPriority: 0
+    CaseSensitive: false
+IncludeIsMainRegex: '([-_](test|unittest))?$'
+IncludeIsMainSourceRegex: ''
+
+# Parámetros y argumentos según Google Style
+BinPackArguments: true
+BinPackParameters: true
+ExperimentalAutoDetectBinPacking: false
+
+# Espacios alrededor de operadores según Google Style
+Cpp11BracedListStyle: true
+
+# Control de macros y preprocesador según Google Style
+MacroBlockBegin: ''
+MacroBlockEnd: ''
+
+# Penalty settings para optimizar el formato
+PenaltyBreakAssignment: 2
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyBreakTemplateDeclaration: 10
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 200
+PenaltyIndentedWhitespace: 0
+
+# Configuraciones adicionales según Google Style
+PointerAlignment: Left
+DeriveLineEnding: true
+DerivePointerAlignment: true
+DisableFormat: false
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: LogicalBlock
+PackConstructorInitializers: NextLine
+QualifierAlignment: Leave
+ReferenceAlignment: Pointer
+RemoveBracesLLVM: false
+SeparateDefinitionBlocks: Leave
+ShortNamespaceLines: 1
+SortJavaStaticImport: Before
+SortUsingDeclarations: true
+SpaceBeforeSquareBrackets: false

@@ -5,48 +5,67 @@
  * @date 21 de septiembre de 2025
  */
 
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Computabilidad y Algoritmia
+// Curso: 2º
+// Práctica 2: Cadenas y lenguajes
+// Autor: Hector Luis Mariño Fernandez
+// Correo: alu0100595604@ull.edu.es
+// Fecha: 21/09/2025
+// Archivo Language.cc: implementación de la clase Language.
+// Contiene la implementación de métodos de la clase Language
+// para manejo de lenguajes formales ordenados por longitud
+// Referencias:
+// https://en.wikipedia.org/wiki/Formal_language
+//
+// Historial de revisiones
+// 21/09/2025 - Creación (primera versión) del código
+
 #include "Language.h"
-#include <vector>
+
 #include <algorithm>
+#include <vector>
 
 /**
  * @brief Añade una cadena al lenguaje
  * Utiliza std::set para garantizar que no haya duplicados
  * @param str Cadena a añadir al lenguaje
  */
-void Language::AddString(const String& str) {
-  strings_.insert(str);
-}
+void Language::AddString(const String& str) { strings_.insert(str); }
 
 /**
  * @brief Obtiene una copia del conjunto de cadenas del lenguaje
  * @return std::set<String> Conjunto de cadenas que forman el lenguaje
  */
-std::set<String> Language::GetStrings() const {
-  return strings_;
-}
+std::set<String> Language::GetStrings() const { return strings_; }
 
 /**
  * @brief Operador de salida para imprimir el lenguaje
  * Imprime el lenguaje en formato de conjunto: {cadena1, cadena2, ...}
- * Las cadenas se ordenan por longitud (y lexicográficamente para misma longitud)
+ * Las cadenas se ordenan por longitud (y lexicográficamente para misma
+ * longitud)
  * @param os Flujo de salida
  * @param lang Lenguaje a imprimir
  * @return std::ostream& Referencia al flujo de salida
  */
 std::ostream& operator<<(std::ostream& os, const Language& lang) {
   // Convertir el set a vector para poder ordenarlo por longitud
-  std::vector<String> sorted_strings(lang.strings_.begin(), lang.strings_.end());
-  
+  std::vector<String> sorted_strings(lang.strings_.begin(),
+                                     lang.strings_.end());
+
   // Ordenar por longitud primero, luego lexicográficamente
-  std::sort(sorted_strings.begin(), sorted_strings.end(), 
-    [](const String& a, const String& b) {
-      if (a.Length() != b.Length()) {
-        return a.Length() < b.Length();  // Ordenar por longitud
-      }
-      return a < b;  // Si tienen la misma longitud, ordenar lexicográficamente
-    });
-  
+  std::sort(
+      sorted_strings.begin(), sorted_strings.end(),
+      [](const String& a, const String& b) {
+        if (a.Length() != b.Length()) {
+          return a.Length() < b.Length();  // Ordenar por longitud
+        }
+        return a <
+               b;  // Si tienen la misma longitud, ordenar lexicográficamente
+      });
+
   os << "{";
   bool first = true;
   for (const auto& str : sorted_strings) {

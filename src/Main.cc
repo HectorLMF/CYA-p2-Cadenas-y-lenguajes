@@ -1,32 +1,49 @@
 /**
  * @file Main.cc
- * @brief Programa principal para operaciones sobre cadenas y lenguajes
- * @author [Tu nombre]
+ * @brief Programa principal para operaciones con cadenas y lenguajes
+ * @author Hector Luis Mariño Fernandez
  * @date 21 de septiembre de 2025
- * 
- * Este programa permite realizar diferentes operaciones sobre cadenas:
- * - Calcular longitud de cadenas
- * - Obtener cadena inversa
- * - Generar prefijos y sufijos
- * - Calcular subconjuntos de cadenas
+ *
+ * Este programa lee cadenas y sus alfabetos desde un archivo de entrada
+ * y permite realizar diversas operaciones sobre ellas como obtener alfabetos,
+ * longitudes, inversas, prefijos y sufijos.
  */
 
-#include "Alphabet.h"
-#include "String.h"
-#include "Language.h"
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Computabilidad y Algoritmia
+// Curso: 2º
+// Práctica 2: Cadenas y lenguajes
+// Autor: Hector Luis Mariño Fernandez
+// Correo: alu0100595604@ull.edu.es
+// Fecha: 21/09/2025
+// Archivo Main.cc: programa cliente.
+// Contiene la función main del proyecto que usa las clases Alphabet,
+// String y Language para realizar operaciones sobre cadenas y lenguajes
+// Referencias:
+// https://google.github.io/styleguide/cppguide.html
+//
+// Historial de revisiones
+// 21/09/2025 - Creación (primera versión) del código
+
 #include <fstream>
 #include <iostream>
-#include <vector>
 #include <sstream>
+#include <vector>
+
+#include "Alphabet.h"
+#include "Language.h"
+#include "String.h"
 
 /**
  * @brief Lee los datos de entrada desde un archivo
  * @param filename Nombre del archivo de entrada
  * @return std::vector<String> Vector de cadenas leídas con sus alfabetos
  * @throws std::runtime_error si no se puede abrir el archivo
- * 
+ *
  * Formato esperado del archivo:
- * Cada línea: <cadena> <alfabeto>
+ * Cada línea: cadena alfabeto
  * Ejemplo:
  * abbab ab
  * 6793836 123456789
@@ -37,17 +54,17 @@ std::vector<String> ReadInputFile(const std::string& filename) {
   if (!file.is_open()) {
     throw std::runtime_error("No se pudo abrir el archivo: " + filename);
   }
-  
+
   std::vector<String> strings;
   std::string line;
-  
+
   // Leer cada línea del archivo
   while (std::getline(file, line)) {
-    if (line.empty()) continue; // Saltar líneas vacías
-    
+    if (line.empty()) continue;  // Saltar líneas vacías
+
     std::istringstream iss(line);
     std::string cadena_str, alfabeto_str;
-    
+
     // Leer cadena y alfabeto de la línea
     if (iss >> cadena_str >> alfabeto_str) {
       // Crear alfabeto a partir de la cadena de símbolos
@@ -56,23 +73,24 @@ std::vector<String> ReadInputFile(const std::string& filename) {
         symbols.insert(c);
       }
       Alphabet alphabet(symbols);
-      
+
       // Crear la cadena con su alfabeto
       String str(cadena_str, alphabet);
-      
+
       // Verificar que la cadena sea válida
       if (!str.IsValid()) {
-        std::cerr << "Advertencia: La cadena '" << cadena_str 
-                  << "' contiene símbolos no presentes en el alfabeto '" 
+        std::cerr << "Advertencia: La cadena '" << cadena_str
+                  << "' contiene símbolos no presentes en el alfabeto '"
                   << alfabeto_str << "'" << std::endl;
       }
-      
+
       strings.push_back(str);
     } else {
-      std::cerr << "Advertencia: Línea con formato incorrecto: " << line << std::endl;
+      std::cerr << "Advertencia: Línea con formato incorrecto: " << line
+                << std::endl;
     }
   }
-  
+
   file.close();
   return strings;
 }
@@ -111,21 +129,22 @@ int main(int argc, char* argv[]) {
   try {
     // Leer datos del archivo de entrada
     std::vector<String> strings = ReadInputFile(input_filename);
-    
+
     // Abrir archivo de salida
     std::ofstream output(output_filename);
     if (!output.is_open()) {
-      std::cerr << "Error: No se pudo abrir el archivo de salida: " << output_filename << std::endl;
+      std::cerr << "Error: No se pudo abrir el archivo de salida: "
+                << output_filename << std::endl;
       return 1;
     }
-    
+
     // Mostrar información de las cadenas leídas
     std::cout << "Número de cadenas leídas: " << strings.size() << std::endl;
-    
+
     // Procesar cada cadena según el código de operación
     for (size_t i = 0; i < strings.size(); ++i) {
       const String& str = strings[i];
-      
+
       switch (opcode) {
         case 1:
           // Mostrar alfabeto de la cadena
@@ -153,10 +172,11 @@ int main(int argc, char* argv[]) {
           return 1;
       }
     }
-    
+
     output.close();
-    std::cout << "Procesamiento completado. Resultados guardados en: " << output_filename << std::endl;
-    
+    std::cout << "Procesamiento completado. Resultados guardados en: "
+              << output_filename << std::endl;
+
   } catch (const std::exception& e) {
     std::cerr << "Error: " << e.what() << std::endl;
     return 1;

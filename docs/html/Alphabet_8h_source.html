@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cadenas y Lenguajes: Archivo de código fuente src/Alphabet.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Cadenas y Lenguajes<span id="projectnumber">&#160;P2</span>
+   </div>
+   <div id="projectbrief">Implementación de clases para manejo de cadenas y lenguajes formales</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('Alphabet_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Alphabet.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Alphabet_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Universidad de La Laguna</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Escuela Superior de Ingeniería y Tecnología</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// Grado en Ingeniería Informática</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Asignatura: Computabilidad y Algoritmia</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Curso: 2º</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Práctica 2: Cadenas y lenguajes</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// Autor: Hector Luis Mariño Fernandez</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Correo: alu0100595604@ull.edu.es</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Fecha: 21/09/2025</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Archivo Alphabet.h: definición de la clase Alphabet.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Contiene la clase Alphabet que representa un alfabeto finito</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// para operaciones con cadenas y lenguajes formales</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// Referencias:</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// https://en.wikipedia.org/wiki/Alphabet_(formal_languages)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Historial de revisiones</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// 21/09/2025 - Creación (primera versión) del código</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef ALPHABET_H</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define ALPHABET_H</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classAlphabet.html">   39</a></span><span class="keyword">class </span><a class="code hl_class" href="classAlphabet.html">Alphabet</a> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classAlphabet.html#abd6563bc410ec9f35f6f58421dc4bf86">   41</a></span>  std::set&lt;char&gt; <a class="code hl_variable" href="classAlphabet.html#abd6563bc410ec9f35f6f58421dc4bf86">symbols_</a>;  </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="comment">// ==================== CONSTRUCTORES ====================</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classAlphabet.html#aa32a08c3997e09e11ac241aa898a15eb">   49</a></span>  <a class="code hl_function" href="classAlphabet.html#aa32a08c3997e09e11ac241aa898a15eb">Alphabet</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_function" href="classAlphabet.html#aa32a08c3997e09e11ac241aa898a15eb">Alphabet</a>(<span class="keyword">const</span> std::set&lt;char&gt;&amp; symbols);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// ==================== MÉTODOS DE ACCESO ====================</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  std::set&lt;char&gt; <a class="code hl_function" href="classAlphabet.html#af77c4fe791d9fe379576d720720fec67">GetSymbols</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="comment">// ==================== MÉTODOS DE CONSULTA ====================</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classAlphabet.html#a73ff5b80745daa16aaca35ae8b92dece">Contains</a>(<span class="keywordtype">char</span> c) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="comment">// ==================== SOBRECARGA DE OPERADORES ====================</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classAlphabet.html#a279db4bd4b86cb4d1473f307f24c8e15">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="classAlphabet.html">Alphabet</a>&amp; alphabet);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">friend</span> std::istream&amp; <a class="code hl_friend" href="classAlphabet.html#a2774958d2c65f692dffbc83e385a5a54">operator&gt;&gt;</a>(std::istream&amp; is, <a class="code hl_class" href="classAlphabet.html">Alphabet</a>&amp; alphabet);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassAlphabet_html"><div class="ttname"><a href="classAlphabet.html">Alphabet</a></div><div class="ttdoc">Clase que representa un alfabeto finito.</div><div class="ttdef"><b>Definition</b> Alphabet.h:39</div></div>
+<div class="ttc" id="aclassAlphabet_html_a2774958d2c65f692dffbc83e385a5a54"><div class="ttname"><a href="classAlphabet.html#a2774958d2c65f692dffbc83e385a5a54">Alphabet::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;is, Alphabet &amp;alphabet)</div><div class="ttdoc">Operador de entrada para leer un alfabeto desde un flujo.</div><div class="ttdef"><b>Definition</b> Alphabet.cc:78</div></div>
+<div class="ttc" id="aclassAlphabet_html_a279db4bd4b86cb4d1473f307f24c8e15"><div class="ttname"><a href="classAlphabet.html#a279db4bd4b86cb4d1473f307f24c8e15">Alphabet::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Alphabet &amp;alphabet)</div><div class="ttdoc">Operador de salida para imprimir el alfabeto.</div><div class="ttdef"><b>Definition</b> Alphabet.cc:56</div></div>
+<div class="ttc" id="aclassAlphabet_html_a73ff5b80745daa16aaca35ae8b92dece"><div class="ttname"><a href="classAlphabet.html#a73ff5b80745daa16aaca35ae8b92dece">Alphabet::Contains</a></div><div class="ttdeci">bool Contains(char c) const</div><div class="ttdoc">Verifica si un símbolo pertenece al alfabeto.</div><div class="ttdef"><b>Definition</b> Alphabet.cc:45</div></div>
+<div class="ttc" id="aclassAlphabet_html_aa32a08c3997e09e11ac241aa898a15eb"><div class="ttname"><a href="classAlphabet.html#aa32a08c3997e09e11ac241aa898a15eb">Alphabet::Alphabet</a></div><div class="ttdeci">Alphabet()=default</div><div class="ttdoc">Constructor por defecto que crea un alfabeto vacío.</div></div>
+<div class="ttc" id="aclassAlphabet_html_abd6563bc410ec9f35f6f58421dc4bf86"><div class="ttname"><a href="classAlphabet.html#abd6563bc410ec9f35f6f58421dc4bf86">Alphabet::symbols_</a></div><div class="ttdeci">std::set&lt; char &gt; symbols_</div><div class="ttdoc">Conjunto de símbolos que conforman el alfabeto.</div><div class="ttdef"><b>Definition</b> Alphabet.h:41</div></div>
+<div class="ttc" id="aclassAlphabet_html_af77c4fe791d9fe379576d720720fec67"><div class="ttname"><a href="classAlphabet.html#af77c4fe791d9fe379576d720720fec67">Alphabet::GetSymbols</a></div><div class="ttdeci">std::set&lt; char &gt; GetSymbols() const</div><div class="ttdoc">Obtiene una copia del conjunto de símbolos del alfabeto.</div><div class="ttdef"><b>Definition</b> Alphabet.cc:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="Alphabet_8h.html">Alphabet.h</a></li>
+    <li class="footer">Generado el Domingo, 21 de septiembre de 2025 11:50:12 para Cadenas y Lenguajes por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
