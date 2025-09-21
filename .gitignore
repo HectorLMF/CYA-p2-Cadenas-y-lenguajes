@@ -1,0 +1,47 @@
+# Archivos ejecutables
+cadenas_lenguajes
+*.out
+*.exe
+
+# Archivos de compilación
+*.o
+*.obj
+*.d
+
+# Archivos de documentación generada (mantener solo la configuración)
+docs/html/
+docs/latex/
+docs/xml/
+docs/man/
+docs/rtf/
+
+# Archivos temporales del sistema
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Archivos de IDEs
+.vscode/
+.idea/
+*.user
+*.suo
+*.ncb
+*.aps
+*.plg
+
+# Archivos de prueba temporales
+test_input.txt
+test_output.txt
+output.txt
+
+# Archivos de backup
+*.bak
+*.backup
+
+# Archivos de log
+*.log
+
+# Archivos de caché
+.cache/
