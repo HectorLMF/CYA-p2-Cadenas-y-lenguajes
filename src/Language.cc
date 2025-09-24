@@ -62,8 +62,7 @@ std::ostream& operator<<(std::ostream& os, const Language& lang) {
         if (a.Length() != b.Length()) {
           return a.Length() < b.Length();  // Ordenar por longitud
         }
-        return a <
-               b;  // Si tienen la misma longitud, ordenar lexicográficamente
+        return a < b;  // Si tienen la misma longitud, ordenar lexicográficamente
       });
 
   os << "{";

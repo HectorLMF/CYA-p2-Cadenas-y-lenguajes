@@ -117,6 +117,11 @@ class String {
    */
   Language Suffixes() const;
 
+
+  Language Subsequences() const;
+
+  Language SubStrings() const;
+
   // ==================== SOBRECARGA DE OPERADORES ====================
 
   /**

@@ -111,6 +111,73 @@ Language String::Suffixes() const {
   return suffixes_lang;
 }
 
+/// @brief Subsecuencias de la cadena
+// devuelve todas las subsecuencias de una cadena y elimina las subcadenas
+/// @return Language que contiene todas las subsecuencias que no son subcadenas.
+Language String::Subsequences() const {
+  Language subsequences_lang;
+  Language subStrings = SubStrings();
+
+  // Añadir la cadena vacía como subsecuencia
+  String empty_string("", alphabet_);
+  subsequences_lang.AddString(empty_string);
+
+  size_t n = content_.length();
+
+  // Generar todas las subsecuencias utilizando un enfoque de conjunto de bits
+
+  for (size_t i = 1; i < (1 << n); ++i) {
+    std::string subseq;
+    for (size_t j = 0; j < n; ++j) {
+      if (i & (1 << j)) {
+        subseq += content_[j];
+      }
+    }
+    String subsequence(subseq, alphabet_);
+    subsequences_lang.AddString(subsequence);
+  }
+
+  Language output_lang;
+
+  for (const auto& str : subsequences_lang.GetStrings()) {
+    bool isSubstring = false;
+    for (const auto& subStr : subStrings.GetStrings()) {
+      if (str == subStr) {
+        isSubstring = true;
+      }
+    }
+
+    if (!isSubstring) {
+      output_lang.AddString(str);
+    }
+  }
+
+  return output_lang;
+}
+
+/// @brief Subcadenas de la cadena
+/// encuentra todas las subcadenas de una cadena
+/// @return Language que contiene todas las subcadenas.
+
+Language String::SubStrings() const {
+  Language substrings_lang;
+
+  // Añadir la cadena vacía como subcadena
+  String empty_string("", alphabet_);
+  substrings_lang.AddString(empty_string);
+
+  size_t n = content_.length();
+
+  // Generar todas las subcadenas posibles
+  for (size_t i = 0; i < n; ++i) {
+    for (size_t j = i + 1; j <= n; ++j) {
+      String substring(content_.substr(i, j - i), alphabet_);
+      substrings_lang.AddString(substring);
+    }
+  }
+  return substrings_lang;
+}
+
 /**
  * @brief Operador de igualdad para comparar dos cadenas
  * Compara únicamente el contenido de las cadenas, no sus alfabetos

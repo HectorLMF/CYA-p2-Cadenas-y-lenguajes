@@ -107,6 +107,7 @@ void Usage(const std::string& program_name) {
   std::cout << " 3: inversa\n";
   std::cout << " 4: prefijos\n";
   std::cout << " 5: sufijos\n";
+  std::cout << " 6: subsecuencias\n";
 }
 
 /**
@@ -166,6 +167,11 @@ int main(int argc, char* argv[]) {
           // Mostrar sufijos de la cadena
           output << str.Suffixes() << std::endl;
           break;
+
+        case 6:
+          output << str.Subsequences() << std::endl;
+          break;
+
         default:
           // Código de operación inválido
           Usage(argv[0]);
