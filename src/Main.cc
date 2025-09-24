@@ -148,23 +148,23 @@ int main(int argc, char* argv[]) {
       switch (opcode) {
         case 1:
           // Mostrar alfabeto de la cadena
-          output << (i + 1) << " " << str.GetAlphabet() << std::endl;
+          output << str.GetAlphabet() << std::endl;
           break;
         case 2:
           // Mostrar longitud de la cadena
-          output << (i + 1) << " " << str.Length() << std::endl;
+          output << str.Length() << std::endl;
           break;
         case 3:
           // Mostrar cadena inversa
-          output << (i + 1) << " " << str.Reverse() << std::endl;
+          output << str.Reverse() << std::endl;
           break;
         case 4:
           // Mostrar prefijos de la cadena
-          output << (i + 1) << " " << str.Prefixes() << std::endl;
+          output << str.Prefixes() << std::endl;
           break;
         case 5:
           // Mostrar sufijos de la cadena
-          output << (i + 1) << " " << str.Suffixes() << std::endl;
+          output << str.Suffixes() << std::endl;
           break;
         default:
           // Código de operación inválido
